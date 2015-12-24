@@ -14,3 +14,7 @@ telectron is an unofficial telegram desktop app using electron & coffeescript
 # Config
 
 You can also configure it as a `WeChat` client, just change `url` field in `config.json` from `https://web.telegram.org` to `https://wx.qq.com`.
+
+# License
+
+MIT
