@@ -1,0 +1,5 @@
+{
+  "use-proxy": true,
+  "proxy-server": "127.0.0.1:1080",
+  "url": "https://web.telegram.org"
+}
