@@ -18,12 +18,16 @@
     }
   });
 
+  app.commandLine.appendSwitch('proxy-server', '127.0.0.1:1080');
+
   app.on('ready', function() {
     mainWindow = new browserWindow({
-      width: 800,
-      height: 600
+      width: 1000,
+      height: 800,
+      "node-integration": false
     });
-    mainWindow.loadURL("https://web.telegram.com");
+    mainWindow.webContents.setUserAgent("Mozilla/5.0 (Windows NT 10.0; WOW64)\nAppleWebKit/537.36 (KHTML, like Gecko)\nChrome/46.0.2490.86 Safari/537.36");
+    mainWindow.loadURL("https://web.telegram.org");
     mainWindow.webContents.openDevTools();
     return mainWindow.on('closed', function() {
       return mainWindow = null;
